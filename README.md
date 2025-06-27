@@ -1,6 +1,6 @@
 # Kelly Arseneau | Data Science Portfolio  
 ### *Graphically speaking...*
-> *"The best ideas start with a question. I make sure they don't end there."*
+> *The best ideas start with a question. I make sure they don't end there.*
 
 Welcome to my professional portfolio—where data meets design, and models meet meaning. This repository showcases a curated collection of real-world data science projects that span machine learning, visualization, ETL pipelines, and more. Every project was built with purpose: to solve complex problems, tell compelling stories, and show what’s possible when insight drives action.
 
