@@ -39,3 +39,24 @@ function type() {
 document.addEventListener("DOMContentLoaded", () => {
     setTimeout(type, 500);
 });
+fetch('projects.json')
+    .then(res => res.json())
+    .then(projects => {
+        const container = document.getElementById('project-list');
+        projects.forEach(project => {
+            const card = document.createElement('div');
+            card.className = 'project-card';
+
+            card.innerHTML = `
+        <img src="${project.image}" alt="${project.title}" />
+        <h4>${project.title}</h4>
+        <p>${project.description}</p>
+        <div class="tags">${project.tags.map(tag => `<span>${tag}</span>`).join('')}</div>
+        <div class="buttons">
+          ${project.github ? `<a href="${project.github}" target="_blank">GitHub</a>` : ""}
+          ${project.demo ? `<a href="${project.demo}" target="_blank">Live Demo</a>` : ""}
+        </div>
+      `;
+            container.appendChild(card);
+        });
+    });
