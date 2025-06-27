@@ -2614,3 +2614,14 @@ body {
   background-color: #1c1c1c;
   text-align: center;
 }
+
+body.dark-theme {
+  background-color: #111;
+  color: #f8f9fa;
+}
+
+.hero-container h1,
+.hero-container p,
+.hero-container span.typed {
+  color: #f8f9fa !important;
+}
